@@ -1,0 +1,277 @@
+ /*CSS Reset*/
+ *{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/*NAVIGATION BAR*/
+#navbar{
+   display: flex;
+    flex-direction:row;
+    position:absolute;
+    top: 0px;
+}
+
+#logo{
+    margin: 20px;
+}
+#logo img{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black; 
+    border-radius: 50%;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+  
+  
+}
+#navbar::before{
+    content: " ";
+   background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display: block;
+
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 15px;
+    font-family: 'Chela One', cursive;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    
+
+}
+/*home section*/
+#home{
+display: flex;
+flex-direction: column;
+padding: 100px 120px;
+justify-content: center;
+align-items: center;
+height: 45vh;
+font-family: 'Reggae One', cursive;
+
+
+}
+#home::before{
+    content: " ";
+   background-image: url('wall3.jpg');
+   background-position: center;
+   background-size: 100%;
+   background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+#home p{
+font-size: 0.9rem;
+color: white;
+text-align: center;
+
+}
+#home button{
+    color: aliceblue;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid snow;
+    border-radius: 15px;
+}
+
+#home button:hover{
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.secondary{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Chela One', cursive;
+font-family: 'Goblin One', cursive;
+padding: 10px;
+}
+.services-container{
+   
+    height: 580px;
+    
+
+}
+.services-container h1{
+    font-family: 'Reggae One', cursive; 
+ text-align: center;
+  margin: 10px;
+  padding: 20px;
+ color: rgb(19, 18, 18);
+ 
+ font-size: 2.8rem;
+ font-weight: bold;
+}
+.services{
+    margin: 10px;
+    display: flex;
+   
+    right: 0px;
+    left: 0px;
+    
+    
+    
+
+
+}
+.box{
+    border: 2px solid rgb(243, 11, 11);
+    padding: 20px;
+    margin: 8px;
+    border-radius: 20px;
+    background-color: rgb(226, 216, 216);
+    box-shadow: 5px 5px 10px yellow;
+   
+     
+}
+.box p{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Chela One', cursive;
+}
+.box img{
+    display: block;
+    
+    margin:  auto;
+    height: 140px;
+    
+}
+/*client section*/
+section #clint{
+    height: 500px;
+    position: relative;
+}
+
+.item{
+     display: flex;
+     
+     align-items: center;
+     justify-content: center;
+}
+.item::before{
+    content: " ";
+    position: absolute;
+    background: url('wall5.jpg') ;
+  width: 100%;
+  height: 50%;
+ z-index: -1;
+    opacity: 0.4;
+
+}
+#clint h1{
+    text-align: center;
+ padding: 2px;
+ color: rgb(19, 18, 18);
+ font-family: 'Reggae One', cursive;
+ font-size: 2.8rem;
+ font-weight: bold;
+}
+
+.clint-item{
+  padding: 40px;
+}
+.clint-item img{
+    width: 120px;
+}
+.contact{
+    margin: 10px;
+    padding: 20px;
+}
+
+.contact h1{
+    font-family: 'Reggae One', cursive; 
+    text-align: center;
+     margin: 10px;
+     padding: 20px;
+    color: rgb(19, 18, 18);
+    
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.form{
+    
+    width: 400px;
+    margin: 30px auto;
+}
+.form p{
+    
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+    padding: 10px;
+    margin: 8px;
+    width: 100%;
+    font-size: 0.8rem;
+    border: 2px solid salmon;
+}
+.form button{
+    
+    color: aliceblue;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid snow;
+    border-radius: 15px;
+    width: 150px;
+  
+}
+
+.form button:hover{
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer{
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Reggae One', cursive;
+    text-align: center;
+    background-color: rgb(250, 169, 160);
+}
